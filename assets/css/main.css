@@ -1,0 +1,69 @@
+body,html{
+    font-family: 'Montserrat';
+    background-color: #081E39;
+    color: #fff;
+}
+
+/* HEADER */
+.header{
+	/* position: fixed;
+	top: 0;
+	left: 0; */
+    background-color: #01082c;
+	width: 100vw;
+	z-index: 2;
+    color: #fff;
+}
+
+.header-wrapper{
+    padding: 2px 5vw;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.header-logo{
+    width: 60px;
+    height: auto;
+}
+
+.header-nav-item {
+    font-weight: 600;
+    font-size: 14px;
+    padding: 0 10px;
+    font-family: 'Montserrat';
+    min-width: 180px;
+    letter-spacing: 2px;
+    font-weight: 500;
+}
+
+.header-nav-item.active,
+.header-nav-item:hover{
+    cursor: pointer;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-image: linear-gradient(90deg, #825FF5 0%, #3B33A2 48%, #43D3D8 100%);
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.intro{
+    height: calc(100vh - 60px);
+    overflow: hidden;
+    background-color: #081E39;
+
+    background: no-repeat url(../images/bg-intro.jpg) center center;
+    background-size: cover;
+}
+
+.intro .desc{
+    padding-right: 70px;
+    line-height: 26px;
+}
+
+
+
+
+
+
+
+
