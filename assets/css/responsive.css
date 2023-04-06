@@ -52,6 +52,28 @@
     .hidden-m-t {
         display: none !important;
     }
+
+    .reverse-mobile{
+        flex-direction: column !important;
+        display: flex;
+    }
+
+    .roadmap-block--4{
+        order: 2;
+    }
+
+    .roadmap-block--5{
+        order: 3;
+    }
+
+    .roadmap-block--6{
+        order: 1;
+    }
+
+    .roadmap-block{
+        padding: 0;
+        padding-left: 40px;
+    }
     
     .product-mobile{
         flex-direction: column
@@ -365,6 +387,10 @@
         align-content: inherit;
         justify-content: center;
         font-size: 30px;
+    }
+
+    .sef-img{
+        height: auto;
     }
 }
 
