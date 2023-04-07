@@ -369,8 +369,8 @@
     }
 
     .intro-button{
-        font-size: 12px;
-        padding: 20px 10px;
+        font-size: 14px;
+        padding: 10px;
     }
 
     .intro {
@@ -396,6 +396,19 @@
     .mine-block--2,
     .mine-block--4{
         margin-top: 0;
+    }
+
+    .graph2{
+        background-size: auto 60%;
+    }
+
+    .mine-img img{
+        width: 70%;
+    }
+
+    .about-video img{
+        width: 75%;
+        margin-top: 20px;
     }
 }
 

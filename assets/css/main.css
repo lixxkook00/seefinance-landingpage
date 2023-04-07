@@ -98,7 +98,7 @@ body,html{
 #token{
     padding: 90px 0;
     /* background: url(https://img.freepik.com/free-photo/lovely-blue-paint-water_23-2147798302.jpg?w=1480&t=st=1680833478~exp=1680834078~hmac=b134d7f79f3180eee7294824dee73ec1d039bd4ba1ec71028e967977f4118cf1); */
-    background-color: #cdebf6;
+    /* background-color: #000000; */
 }
 
 .partner{
@@ -130,23 +130,6 @@ body,html{
 
 .roadmap-block--3{
     padding-top: 80px;
-}
-
-.intro-button{
-    clip-path: polygon(51% 9%, 100% 50%, 51% 88%, 0% 50%);
-    padding: 30px;
-    background: linear-gradient(360deg, #1777BC 0%, #76C5F1 100%);
-    color: #fff;
-    font-weight: 600;
-    text-align: center;
-    min-width: 160px;
-
-    display: flex; 
-    align-items: center;
-    justify-content: center;
-
-    border: 1px solid red;
-    transition: all 0.5s ease;
 }
 
 @-webkit-keyframes floater-2 {0% {transform: translate3d(0px, 
@@ -229,4 +212,46 @@ body,html{
 
 .mine-content{
     margin-top: 30px;
+}
+
+@keyframes mymove {
+    from {
+        filter: drop-shadow(1px 1px 1px #1A69B5);
+    }
+    to {
+        filter: drop-shadow(1px 1px 15px #1A69B5);
+    }
+}
+
+.intro-button{
+    padding: 10px;
+    background: no-repeat url(../images/button-bg.png) center center;
+    background-size: 100% 100%;
+    color: #fff;
+    font-weight: 600;
+    text-align: center;
+    min-width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease;
+    animation: mymove 2s infinite alternate;
+}
+
+.footer .download {
+    transition: all .5s ease-in-out;
+    margin-right: 0;
+}
+
+.footer .download+.download{
+    margin-left: 10px;
+}
+
+.download img{
+    height: 60px;
+    width: auto;
+}
+
+.tokenomic img{
+    min-width: 90%;
 }

@@ -134,7 +134,7 @@
                     <div class="h-100 centering wow bounceInLeft">
                         <div class="about-content">
                             <div class="centering">
-                                <div class="primary-title">
+                                <div class="primary-title mb-2">
                                     SEAFINANCE
                                 </div>
                             </div>
@@ -234,7 +234,7 @@
                         <div class="mine-block mine-block--1">
                             <div class="centering">
                                 <div class="sef-title gradient-text">
-                                    1. MINING PROCESS STARTS.
+                                    MINING PROCESS STARTS.
                                 </div>
                             </div>
                             <div class="sef-content">
@@ -245,7 +245,7 @@
                         <div class="mine-block mine-block--2">
                             <div class="centering">
                                 <div class="sef-title gradient-text">
-                                    2. MINING EVERY 24 HOURS AUTOMATICALLY.
+                                    MINING EVERY 24 HOURS AUTOMATICALLY.
                                 </div>
                             </div>
                             <div class="sef-content">
@@ -255,7 +255,7 @@
                         </div>
                     </div>
                     <div class="col-lg-6">
-                        <div class="mine-img">
+                        <div class="mine-img centering">
                             <img src="./assets/images/howtomine.png" alt="">
                         </div>
                     </div>
@@ -263,7 +263,7 @@
                         <div class="mine-block mine-block--3">
                             <div class="centering">
                                 <div class="sef-title gradient-text">
-                                    3. RECOMMEND TO GET MORE SEF.
+                                    RECOMMEND TO GET MORE SEF.
                                 </div>
                             </div>
                             <div class="sef-content">
@@ -274,7 +274,7 @@
                         <div class="mine-block mine-block--4">
                             <div class="centering">
                                 <div class="sef-title gradient-text">
-                                    4. UPGRADE A SMART ACCOUNT.
+                                    UPGRADE A SMART ACCOUNT.
                                 </div>
                             </div>
                             <div class="sef-content">
@@ -390,7 +390,9 @@
                 </div>
 
                 <div class="tokenomic">
-                    <div id="chartContainer" style="height: 370px; width: 100%;"></div>
+                    <div class="centering">
+                        <img src="./assets/images/tokenomic.png" alt="">
+                    </div>
 
                     <div class="centering mt-5 hidden-m-t">
                         <div class="primary-title">
@@ -657,29 +659,13 @@
                 </div>
 
                 <div class="centering w-100 mail">
-                    <div class="d-flex flex-column w-100">
-                        <div class="footer-input d-flex align-items-center">
-                            <div class="footer-input-name">
-                                Newsletter
-                            </div>
-
-                            <div class="footer-input-content d-flex align-items-center">
-                                <input type="text" placeholder="Enter your email address here">
-                                <div class="footer-input-btn">
-                                    <i class="fa-solid fa-paper-plane"></i>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="d-flex mt-3 justify-content-end">
-                            <a href="">Shipping</a>
-
-                            <a href="">Privacy Policy</a>
-
-                            <a href="">Support</a>
-
-                            <a href="">Contact</a>
-                        </div>
+                    <div class="d-flex w-100">
+                        <a href="" class="download">
+                            <img class="" src="./assets/images/googleplay.png" alt="">
+                        </a>
+                        <a href="" class="download">
+                            <img class="" src="./assets/images/appstore.png" alt="">
+                        </a>
                     </div>
                 </div>
             </div>
@@ -729,36 +715,36 @@
     });
     wow.init();
 
-    window.onload = function () {
-        CanvasJS.addColorSet("greenShades",
-            [//colorSet Array
+    // window.onload = function () {
+    //     CanvasJS.addColorSet("greenShades",
+    //         [//colorSet Array
 
-                "#00324B",
-                "#007DA5",
-                "#82CDD7",
-                "#9BD2D2",
-            ]);
-        var chart = new CanvasJS.Chart("chartContainer", {
-            animationEnabled: true,
-            backgroundColor: "transparent",
-            axisX: {
-                title: "Red Color labels",
-                labelFontColor: "red"
-            },
-            colorSet: "greenShades",
-            data: [{
-                type: "pie",
-                startAngle: 240,
-                yValueFormatString: "##0.00\"%\"",
-                indexLabel: "{label} {y}",
-                dataPoints: [
-                    { y: 60, label: "Community Airdrop" },
-                    { y: 10, label: "Marketing" },
-                    { y: 10, label: "Strategic Ecosystem" },
-                    { y: 20, label: "Burn" }
-                ]
-            }]
-        });
-        chart.render();
-    }
+    //             "#00324B",
+    //             "#007DA5",
+    //             "#82CDD7",
+    //             "#9BD2D2",
+    //         ]);
+    //     var chart = new CanvasJS.Chart("chartContainer", {
+    //         animationEnabled: true,
+    //         backgroundColor: "transparent",
+    //         axisX: {
+    //             title: "Red Color labels",
+    //             labelFontColor: "red"
+    //         },
+    //         colorSet: "greenShades",
+    //         data: [{
+    //             type: "pie",
+    //             startAngle: 240,
+    //             yValueFormatString: "##0.00\"%\"",
+    //             indexLabel: "{label} {y}",
+    //             dataPoints: [
+    //                 { y: 60, label: "Community Airdrop" },
+    //                 { y: 10, label: "Marketing" },
+    //                 { y: 10, label: "Strategic Ecosystem" },
+    //                 { y: 20, label: "Burn" }
+    //             ]
+    //         }]
+    //     });
+    //     chart.render();
+    // }
 </script>
