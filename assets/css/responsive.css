@@ -368,9 +368,9 @@
         padding: 4px;
     }
 
-    .about-video{
-        height: 40vh !important;
-        overflow: hidden;
+    .intro-button{
+        font-size: 12px;
+        padding: 20px 10px;
     }
 
     .intro {
@@ -391,6 +391,11 @@
 
     .sef-img{
         height: auto;
+    }
+
+    .mine-block--2,
+    .mine-block--4{
+        margin-top: 0;
     }
 }
 

@@ -50,8 +50,18 @@ body,html{
     height: calc(100vh - 60px);
     overflow: hidden;
     background-color: #081E39;
-    background: no-repeat url(../images/bg-intro.jpg) center center;
+    /* background: no-repeat url(../images/bg-intro.jpg) center center; */
     background-size: cover;
+    position: relative;
+}
+
+.intro-content{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: transparent;
 }
 
 .intro .desc{
@@ -120,4 +130,103 @@ body,html{
 
 .roadmap-block--3{
     padding-top: 80px;
+}
+
+.intro-button{
+    clip-path: polygon(51% 9%, 100% 50%, 51% 88%, 0% 50%);
+    padding: 30px;
+    background: linear-gradient(360deg, #1777BC 0%, #76C5F1 100%);
+    color: #fff;
+    font-weight: 600;
+    text-align: center;
+    min-width: 160px;
+
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid red;
+    transition: all 0.5s ease;
+}
+
+@-webkit-keyframes floater-2 {0% {transform: translate3d(0px, 
+
+0px, 0px);}80% {transform: translate3d(0px, -10px, 0px);}100% 
+
+{transform: translate3d(0px, 0px, 0px);}}
+@keyframes floater-2 {0% {transform: translate3d(0px, 0px, 
+
+0px);}50% {transform: translate3d(0px, -10px, 0px);}100% 
+
+{transform: translate3d(0px, 0px, 0px);}}
+
+.intro-logo{
+    animation: floater-2 infinite 4s ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+.intro-button:hover{
+    cursor: pointer;
+    transform: scale(0.95);
+}
+
+.intro-social-wrapper{
+    margin-top: 20px;
+}
+
+.intro-social{
+    height: 30px;
+    width: 30px;
+    /* color: #01082C; */
+    border-radius: 50%;
+    transition: all 0.5s ease;
+    background: linear-gradient(360deg, #1777BC 0%, #76C5F1 100%);
+}
+
+.intro-social:hover{
+    cursor: pointer;
+    transform: rotate(360deg);
+}
+
+.intro-social+.intro-social{
+    margin-left: 10px;
+}
+
+.graph2 {
+    height: 613px;
+    width: 100%;
+    background: url(../images/wave.png) repeat-x center center;
+    background-size: contain;
+    animation: graph 130s linear infinite;
+    -webkit-animation: graph 100s linear infinite;
+    mix-blend-mode: luminosity;
+}
+
+@keyframes graph { 
+
+	from {background-position:-2765px 100%,0 0}
+	to {background-position:0 100%,0 0}
+}
+
+@-webkit-keyframes graph {
+	 
+	from {background-position:-2765px 100%,0 0}
+	to {background-position:0 100%,0 0}
+} 
+
+.mine-block .gradient-text{
+    font-size: 20px;
+    text-align: center;
+}
+
+.mine-block--2{
+    margin-top: 90%;
+}
+
+.mine-block--4{
+    margin-top: 70%;
+}
+
+.mine-content{
+    margin-top: 30px;
 }
