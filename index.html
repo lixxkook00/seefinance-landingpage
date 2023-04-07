@@ -43,15 +43,16 @@
     <!-- HEADER MOBILE -->
     <div class="header-mobile hide-on-pc">
         <img class="header-mobile-logo" src="./assets/images/logo.png" alt="">
+
         <div class="header-mobile-left">
-            <div class="header-mobile-icon centering" onclick="toggleNavMobile()">
-                <i class="fa-solid fa-bars"></i>
+            <div class="header-mobile-icon centering primary-button">
+                Whitepaper
             </div>
         </div>
     </div>
 
     <!-- NAV MOBILE -->
-    <div class="soft-menu" onclick="toggleNavMobile()">
+    <!-- <div class="soft-menu" onclick="toggleNavMobile()">
         <ul class="soft-menu__list" onclick="{(e) => e.stopPropagation();}">
             <li class="soft-menu__item soft-menu__item--active">
                 <a class="" href="#about">
@@ -82,7 +83,7 @@
                 </a>
             </div>
         </ul>
-    </div>
+    </div> -->
 
     <!-- HEADER -->
     <header class="header hidden-m-t">
@@ -625,6 +626,10 @@
         var chart = new CanvasJS.Chart("chartContainer", {
             animationEnabled: true,
             backgroundColor: "transparent",
+            axisX: {
+                title: "Red Color labels",
+                labelFontColor: "red"
+            },
             colorSet: "greenShades",
             data: [{
                 type: "pie",

@@ -519,15 +519,14 @@ a:hover{
 
 .primary-title{
 	position: relative;
-  display: inline-flex;
+	display: inline-flex;
 	font-weight: 800;
 	font-size: 40px;
-  text-transform: uppercase;
+	text-transform: uppercase;
 	font-family: 'SVN-Bango';
-
-  background: linear-gradient(180deg, #014887 0%, #0B70D9 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+	background: linear-gradient(180deg, #1777BC 0%, #76C5F1 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 }
 
 .gradient-text{
